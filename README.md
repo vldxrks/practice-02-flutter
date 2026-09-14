@@ -1,17 +1,32 @@
-# demo
+# Практична робота 2 — Технологія Flutter
 
-A new Flutter project.
+## Дисципліна
 
-## Getting Started
+Програмування для мобільних платформ
 
-This project is a starting point for a Flutter application.
+## Тема
 
-A few resources to get you started if this is your first Flutter project:
+Технологія Flutter
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Варіант 1 — Три дерева Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Мета роботи
+
+Дослідити механізм побудови інтерфейсу у Flutter та взаємодію трьох основних дерев:
+
+- Widget Tree;
+- Element Tree;
+- RenderObject Tree.
+
+Також необхідно перевірити, як `setState()` впливає на перебудову інтерфейсу та за яких умов Flutter перевикористовує існуючий `Element`.
+
+---
+
+## 1. Мінімальний приклад із `setState()`
+
+У програмі створено `StatefulWidget`, який містить лічильник `count`.
+
+При натисканні на кнопку виконується:
+
+```dart
+setState(() => count++);
